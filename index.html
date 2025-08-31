@@ -91,6 +91,13 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animate style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Project 4</title>
   </head>
   <body>
@@ -130,7 +137,9 @@
         <section class="hero">
           <!-- hero left -->
           <section class="hero__content">
-            <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+            <h1 class="hero__heading" data-aos="animate__heartBeat">
+              Exceptional dental care for all ages.
+            </h1>
             <p class="hero__desc">
               Exceptional dental care for all ages. Your great smile begins with
               a great dentist.
@@ -147,11 +156,13 @@
                 src="./assets/img/hero1.jpg"
                 alt=""
                 class="hero__img hero__img--large"
+                data-aos="animate__fadeInLeft"
               />
               <img
                 src="./assets/img/hero2.jpg"
                 alt=""
                 class="hero__img hero__img--small"
+                data-aos="animate__fadeInRight"
               />
             </figure>
           </div>
@@ -164,7 +175,12 @@
       <!-- our services -->
       <section class="services">
         <div class="container">
-          <h2 class="service__heading section-heading">Our services</h2>
+          <h2
+            class="service__heading section-heading"
+            data-aos="animate__headShake"
+          >
+            Our services
+          </h2>
           <p class="service__desc section-desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.
@@ -172,7 +188,12 @@
           <div class="service__row">
             <!-- service left -->
             <figure>
-              <img src="./assets/img/service.jpg" alt="" class="service__img" />
+              <img
+                src="./assets/img/service.jpg"
+                alt=""
+                class="service__img"
+                data-aos="animate__fadeInTopLeft"
+              />
             </figure>
             <!-- service right -->
             <div class="service__list">
@@ -258,7 +279,12 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="section-heading work__heading">How it works</h2>
+          <h2
+            class="section-heading work__heading"
+            data-aos="animate__headShake"
+          >
+            How it works
+          </h2>
           <p class="section-desc work__desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.
@@ -320,17 +346,21 @@
                   src="./assets/img/about_1.jpg"
                   alt=""
                   class="about__img--big"
+                  data-aos="animate__fadeInLeft"
                 />
                 <img
                   src="./assets/img/about_2.jpg"
                   alt=""
                   class="about__img--small"
+                  data-aos="animate__fadeInRight"
                 />
               </figure>
             </div>
             <!-- about right -->
             <section class="about-content">
-              <h2 class="section-heading">Take back your smile with shine.</h2>
+              <h2 class="section-heading" data-aos="animate__headShake">
+                Take back your smile with shine.
+              </h2>
               <p class="section-desc about-content__desc">
                 If you’re missing multiple teeth due to decay, injury, or the
                 natural aging process, dentures might be the perfect solution.
@@ -346,7 +376,9 @@
           '
           <!-- team top -->
           <div class="team-heading">
-            <h2 class="section-heading">Our virtual dentist</h2>
+            <h2 class="section-heading" data-aos="animate__headShake">
+              Our virtual dentist
+            </h2>
             <a href="#!" class="btn team-heading__btn">Meet our dentist</a>
           </div>
           <!-- team list -->
@@ -459,7 +491,10 @@
             </figure>
             <!-- install right -->
             <section class="install__content">
-              <h2 class="section-heading install__heading">
+              <h2
+                class="section-heading install__heading"
+                data-aos="animate__headShake"
+              >
                 Take back your smile with dentures
               </h2>
               <p class="install__desc">
@@ -492,7 +527,10 @@
           <div class="blog__inner">
             <!-- blog left -->
             <section class="blog__content">
-              <h2 class="section-heading blog__heading">
+              <h2
+                class="section-heading blog__heading"
+                data-aos="animate__headShake"
+              >
                 Read Latest News & Events.
               </h2>
               <a href="" class="blog__more">Read All Blog</a>
@@ -585,7 +623,10 @@
       <section class="appointment">
         <div class="container">
           <div class="appointment__inner">
-            <h2 class="section-heading appointment__heading">
+            <h2
+              class="section-heading appointment__heading"
+              data-aos="animate__headShake"
+            >
               Always welcoming new patients
             </h2>
             <p class="appointment__desc">
@@ -732,5 +773,14 @@
         </div>
       </div>
     </footer>
+    <!-- js animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
+      });
+    </script>
   </body>
 </html>

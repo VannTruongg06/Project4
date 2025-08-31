@@ -749,3 +749,10 @@ a {
   line-height: 1.86;
   margin-top: 28px;
 }
+/* AOS */
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}
