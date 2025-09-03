@@ -107,6 +107,7 @@
   .service-item {
     width: 90%;
     text-align: start;
+    margin-top: 30px;
   }
   .service__list {
     text-align: center;
