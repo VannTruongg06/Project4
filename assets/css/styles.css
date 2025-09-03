@@ -290,7 +290,6 @@ a {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.75x;
-  width: 351px;
 }
 
 .service-list__btn {
@@ -529,6 +528,7 @@ a {
 
 .blog__heading {
   max-width: 470px;
+  text-align: start;
 }
 
 .blog__more {
